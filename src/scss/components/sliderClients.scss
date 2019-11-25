@@ -1,0 +1,62 @@
+@import '../base/index';
+.sliderClients {
+    display: flex;
+    background-color: $bgColorSecondary;
+    &__column-left {
+        flex-basis: 50%;
+        .sliderClients__itemImg {
+            width: 100%;
+        }
+    }
+    &__column-right {
+        flex-basis: 50%;
+        padding-top: 100px;
+        padding-left: 70px;
+    }
+    &__itemText {
+        font-family: $blockquoteFontFam;
+        font-size: 36px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 42px;
+        width: 501px;
+        color: $primeTextColor;
+        margin-bottom: 30px;
+    }
+    &__itemText-2 {
+        font-family: $primeTextFontFam;
+        font-size: $secondaryTextFontSize;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $primeTextColor;
+        
+    }
+    &__ctrlsBox {
+        display: flex;
+        justify-content: space-around;
+        width: 100px;
+        margin-top: 50px;
+        margin-left: 250px;
+    }
+    &__ctrl {
+        width: 12px;
+        height: 12px;
+        background-color: $primeTextColor;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: .2;
+        transition: $transition;
+        &:hover {
+            opacity: .6;
+        }
+    }
+    &__ctrl-active {
+        opacity: 1;
+        cursor: default;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+}
