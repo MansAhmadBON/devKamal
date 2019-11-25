@@ -1,0 +1,23 @@
+@import '../base/index';
+.footerBottom {
+    background-color: $bgBottom;
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    &__text {
+        width: 370px;
+        font-family: $primeTextFontFam;
+        font-size: $primeTextFontSize;
+        line-height: 23px;
+        color: $textColorBottom;
+        margin: 0 auto;
+        & a {
+            color: $primeTextColor;
+            transition: $transition;
+            &:hover {
+                padding-bottom: 5px;
+                border-bottom: 1px solid $primeTextColor;
+            }
+        }
+    }
+}

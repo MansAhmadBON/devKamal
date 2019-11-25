@@ -21,5 +21,16 @@
                 border: 1px solid $redHover;
             }
         }
+        &__item-white {
+            padding-top: 4px;
+            border: 2px solid $primeTextColor;
+            &:hover {
+                border: 2px solid $primeTextColor;
+                background-color: $bgBottom;
+            }
+        }
     }
+}
+.socialLinksBox-white {
+    align-self: center;
 }

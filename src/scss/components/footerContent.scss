@@ -1,0 +1,36 @@
+@import '../base/index';
+.footerContent {
+    display: flex;
+    text-align: center;
+    padding-bottom: 87px;
+    justify-content: space-between;
+    &__column {
+        flex-basis: 33.3%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        .footerTitleColumn {
+            font-family: $primeTextFontFam;
+            font-size: $primeTextFontSize;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $primeTextColor;
+        }
+        .footerTitleColumn-center {
+            padding-left: 10px;
+        }
+        .footerTextColumn {
+            font-family: $primeTextFontFam;
+            font-size: $primeTextFontSize;
+            line-height: 23px;
+            color: $primeTextColor;
+            width: 170px;
+            margin-top: 22px;
+            align-self: center;
+        }
+        .footerTextColumn-colRight {
+            width: 310px;
+        }
+    }
+}
