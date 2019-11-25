@@ -1,0 +1,25 @@
+@import '../base/index';
+@import '../vendors/mixins.scss';
+.download {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    &__title {
+        font-family: $primeTextFontFam;
+        font-size: 28px;
+        font-weight: 300;
+        color: $nameColorTeam;
+        margin-bottom: 16px;
+    }
+    &__text {
+        font-family: $primeTextFontFam;
+        font-size: 13px;
+        font-weight: 700;
+        color: $nameColorTeam;
+        text-transform: uppercase;
+        margin-bottom: 41px;
+    }
+    &__btn {
+        @include btn(18px, 83px, 18px, 83px)
+    }
+}
