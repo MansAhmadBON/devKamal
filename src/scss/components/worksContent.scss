@@ -1,0 +1,63 @@
+@import '../base/index';
+.worksContent {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        position: relative;
+        flex-basis: 25%;
+        height: 350px;
+        background-size: cover;
+        border: 1px solid $primeTextColor;
+        .worksItemDescr {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $red;
+            opacity: .9;
+            cursor: pointer;
+            &__text {
+                font-family: $primeTextFontFam;
+                font-size: $primeTextFontSize;
+                color: $primeTextColor;
+            }
+            &__text-1 {
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 13px;
+            }
+        }
+        &:hover .worksItemDescr {
+            display: flex;
+        }
+    }
+    &__item-1 {
+        background-image: url(../assets/img/img/works1.png);
+    }
+    &__item-2 {
+        background-image: url(../assets/img/img/works2.png);
+    }
+    &__item-3 {
+        background-image: url(../assets/img/img/works3.png);
+    }
+    &__item-4 {
+        background-image: url(../assets/img/img/works4.png);
+    }
+    &__item-5 {
+        background-image: url(../assets/img/img/works5.png);
+    }
+    &__item-6 {
+        background-image: url(../assets/img/img/works6.png);
+    }
+    &__item-7 {
+        background-image: url(../assets/img/img/works7.png);
+    }
+    &__item-8 {
+        background-image: url(../assets/img/img/works8.png);
+    }
+}
