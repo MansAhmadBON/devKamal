@@ -1,0 +1,25 @@
+@import '../base/index';
+.socialLinksBox {
+    margin-top: 31px;
+    align-self: flex-start;
+    padding-left: 10px;
+    .socialLinksList {
+        display: flex;
+        flex-wrap: wrap;
+        width: 128px;
+        justify-content: space-between;
+        &__item {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #e8ecee;
+            cursor: pointer;
+            transition: $transition;
+            &:hover {
+                border: 1px solid $redHover;
+            }
+        }
+    }
+}
