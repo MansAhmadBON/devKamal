@@ -1,0 +1,24 @@
+@import '../base/index';
+@import '../vendors/mixins.scss';
+.headerMainContent {
+    text-align: center;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        margin: 0 auto 42px auto;
+    }
+    &__text {
+        font-size: $titleFontSize;
+        line-height: 33px;
+        color: $primeTextColor;
+        max-width: 1030px;
+        margin-bottom: 77px;
+        text-align: center;
+    }
+    &__btn {
+        @include btn(18px, 46px, 18px, 54px)
+    }
+}

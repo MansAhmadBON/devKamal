@@ -1,0 +1,22 @@
+@import '../base/index';
+.navMain {
+    .navMainLists {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        transition: $transition;
+        .navItemLink {
+            font-family: $primeTextFontFam;
+            font-size: $secondaryTextFontSize;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $primeTextColor;
+        }
+        &:hover {
+            border-bottom: 2px solid $redHover;
+            padding-bottom: 5px;
+        }
+    }
+}

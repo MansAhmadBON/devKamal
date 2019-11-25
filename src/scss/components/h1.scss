@@ -1,4 +1,10 @@
 @import '../base/index';
 h1 {
-    font-family: Raleway;
+    font-family: $h1FontFam;
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 71px;
+    color: $primeTextColor;
+    max-width: 880px;
 }
