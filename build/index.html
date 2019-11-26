@@ -12,33 +12,62 @@
 </head>
 <body>
     <header>
+        <div class="headerMob headerMob-mob">
+            <div class="navBox-mob">
+                <nav class="navMain-mob">
+                    <ul class="navMainLists-mob">
+                        <li class="navMain__item-mob">
+                            <a class="navItemLink navItemLink-mob" href="#features">Features</a>
+                        </li>
+                        <li class="navMain__item-mob">
+                            <a class="navItemLink navItemLink-mob" href="#works">Works</a>
+                        </li>
+                        <li class="navMain__item-mob">
+                            <a class="navItemLink navItemLink-mob" href="#team">Our Team</a>
+                        </li>
+                        <li class="navMain__item-mob">
+                            <a class="navItemLink navItemLink-mob" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="navMain__item-mob">
+                            <a class="navItemLink navItemLink-mob" href="#download">Download</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="closeMenu">
+                    <img src="./assets/img/svg/times-solid.svg" alt="close menu">
+                </div>
+            </div>
+        </div>
         <div class="contentBox">
             <div class="headerContent">
                 <div class="headerTopBox">
                     <div class="headerTopBox__logoBox">
                         <img class="headerTopBox__logo" src="./assets/img/svg/logoHeader.svg" alt="logo company">
                     </div>
-                    <div class="navBox">
+                    <div class="navBox navBox-notMob">
                         <nav class="navMain">
                             <ul class="navMainLists">
                                 <li class="navMain__item">
-                                    <a class="navItemLink" href="#">Features</a>
+                                    <a class="navItemLink" data-target="anchor" href="#features">Features</a>
                                 </li>
                                 <li class="navMain__item">
-                                    <a class="navItemLink" href="#">Works</a>
+                                    <a class="navItemLink" data-target="anchor" href="#works">Works</a>
                                 </li>
                                 <li class="navMain__item">
-                                    <a class="navItemLink" href="#">Our Team</a>
+                                    <a class="navItemLink" data-target="anchor" href="#team">Our Team</a>
                                 </li>
                                 <li class="navMain__item">
-                                    <a class="navItemLink" href="#">Testimonials</a>
+                                    <a class="navItemLink" data-target="anchor" href="#testimonials">Testimonials</a>
                                 </li>
                                 <li class="navMain__item">
-                                    <a class="navItemLink" href="#">Download</a>
+                                    <a class="navItemLink" data-target="anchor" href="#download">Download</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
+                </div>
+                <div class="btnMenuMob">
+                    <img class="btnMenuMob__btn" src="./assets/img/svg/bars-solid.svg" alt="btn menu">
                 </div>
                 <div class="headerMainContent">
                     <h1 class="headerMainContent__title">
@@ -53,7 +82,7 @@
             </div>
         </div>
     </header>
-    <section class="features">
+    <section class="features" id="features">
         <div class="contentBox">
             <div class="featuresContent">
                 <div class="featuresContent__item featuresContent__item-1">
@@ -101,7 +130,7 @@
             </div>
         </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
             <div class="worksContent">
                 <div class="worksContent__item worksContent__item-1">
                     <div class="worksItemDescr">
@@ -185,7 +214,7 @@
             </div>
         </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
         <div class="contentBox">
             <div class="teamContent">
                 <div class="teamContent__item">
@@ -299,7 +328,7 @@
             </div>
         </div>
     </section>
-    <section class="clients">
+    <section class="clients" id="testimonials">
         <div class="sliderClients">
             <div class="sliderClients__column-left">
                 <div class="sliderClients__itemleft">
@@ -323,7 +352,7 @@
             </div>
         </div>
     </section>
-    <section class="download">
+    <section class="download" id="download">
         <h2 class="download__title">Are You Ready to Start? Download Now For Free!</h2>
         <p class="download__text">Fusce dapibus, tellus ac cursus commodo</p>
         <button class="download__btn">Download Here</button>
@@ -331,11 +360,11 @@
     <footer>
         <div class="contentBox">
             <div class="footerContent">
-                <div class="footerContent__column">
+                <div class="footerContent__column footerContent__column-1">
                     <span class="footerTitleColumn">Location</span>
                     <p class="footerTextColumn">3481 Melrose Place Beverly Hills, CA 90210</p>
                 </div>
-                <div class="footerContent__column">
+                <div class="footerContent__column footerContent__column-2">
                     <span class="footerTitleColumn footerTitleColumn-center">Share with Love</span>
                     <div class="socialLinksBox socialLinksBox-white">
                         <ul class="socialLinksList">
@@ -357,7 +386,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footerContent__column">
+                <div class="footerContent__column footerContent__column-3">
                     <span class="footerTitleColumn">About ActiveBox</span>
                     <p class="footerTextColumn footerTextColumn-colRight">
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla nonmetus auctor fringilla.
@@ -371,5 +400,8 @@
             </p>
         </div>
     </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

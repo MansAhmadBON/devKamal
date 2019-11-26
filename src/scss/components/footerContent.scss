@@ -31,6 +31,17 @@
         }
         .footerTextColumn-colRight {
             width: 310px;
+            @media (max-width: 1300px) {
+                width: 200px;
+            }
+        }
+    }
+    @media (max-width: 550px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 30px;
+        .footerContent__column-3 {
+            margin-top: 50px;
         }
     }
 }

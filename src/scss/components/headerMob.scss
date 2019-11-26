@@ -1,0 +1,41 @@
+@import '../base/index';
+.btnMenuMob {
+    display: none;
+    position: absolute;
+    top: -10px;
+    cursor: pointer;
+    &__btn {
+        width: 40px;
+        height: 40px;
+        &:active {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);;
+        }
+    }
+    @media (max-width: 480px) {
+        display: block;
+    }
+}
+.headerMob {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 250px;
+    height: 100vh;
+    background-color: $bgColorSecondary;
+    opacity: .9;
+}
+.closeMenu {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 120%;
+    cursor: pointer;
+}
+
+
+.headerMob-act {
+    display: block;
+}

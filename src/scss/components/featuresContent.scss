@@ -27,5 +27,8 @@
         font-size: $primeTextFontSize;
         line-height: 21px;
         color: $secondaryTextColor;
-    } 
+    }
+    @media (max-width: 1300px) {
+        justify-content: space-around;
+    }
 }

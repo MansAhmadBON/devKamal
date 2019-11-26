@@ -34,4 +34,14 @@
     &__itemText {
         width: 270px;
     }
+    @media (max-width: 1300px) {
+        justify-content: space-around;
+        &__item {
+            margin-bottom: 50px;
+        }
+    }
+    @media (max-width: 650px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }

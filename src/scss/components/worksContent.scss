@@ -35,6 +35,9 @@
         &:hover .worksItemDescr {
             display: flex;
         }
+        @media (max-width: 800px) {
+            flex-basis: 50%;
+        }
     }
     &__item-1 {
         background-image: url(../assets/img/img/works1.png);

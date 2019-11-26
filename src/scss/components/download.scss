@@ -22,4 +22,18 @@
     &__btn {
         @include btn(18px, 83px, 18px, 83px)
     }
+    @media (max-width: 650px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &__title {
+            width: 450px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    }
+    @media (max-width: 460px) {
+        &__title {
+            width: 220px;
+        }
+    }
 }
