@@ -1,5 +1,4 @@
 window.onload = function(){
-    console.log(1)
     const btnOpenMobMenu = document.querySelector('.btnMenuMob');
     const mobMenu = document.querySelector('.headerMob');
     const btnCloseMenu = document.querySelector('.closeMenu');
@@ -17,4 +16,5 @@ window.onload = function(){
         $('body, html').animate({scrollTop: ofSetTop}, 700);
         return false
     })
+
 }
