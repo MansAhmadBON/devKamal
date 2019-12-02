@@ -17,12 +17,13 @@
 }
 .headerMob {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
+    bottom: 0;
     z-index: 999;
-    width: 250px;
-    height: 100vh;
+    width: 200px;
+    min-height: 100vh;
     background-color: $bgColorSecondary;
     opacity: .9;
 }
@@ -30,11 +31,10 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 20px;
-    left: 120%;
+    top: 10%;
+    left: 170%;
     cursor: pointer;
 }
-
 
 .headerMob-act {
     display: block;
